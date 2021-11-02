@@ -20,4 +20,4 @@ Then, start the cypress tests:
 yarn cypress open
 ```
 
-It should show that an error is returned instead. This is because json deserialization is attempted, because the `Content-Length` header cannot be read, while it's present when run standalone.
+It should show that an error is returned instead. This is because json deserialization is attempted, because the `Content-Length` header cannot be read, while it's present when run standalone. This may or may not be related to the response having an empty body. In the actual code where this POC is extracted from, it only happens for responses with empty bodies.
