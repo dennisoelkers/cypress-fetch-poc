@@ -1,0 +1,6 @@
+{
+    "integrationFolder": "cypress/tests",
+    "testFiles": [
+        "fetch.spec.js"
+    ]
+}
